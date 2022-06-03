@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --dark: #121212;
+    --white: #fff;
+    --gold: #ffb000;
+    --blue: #447BBE;
+    --darkblue: #2B3784;
+    --red: #DF1F2D;
+    --darkred: #B11313;
+}
+
+nav {
+    background: var(--dark);
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-logo img {
+    height: 1.8em;
+}
+
+.nav-logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item a {
+    transition: .3s ease;
+}
+
+.nav-item a:hover {
+    color: var(--gold);
+}
+
+.hamburgher {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+
+
+    .hamburgher {
+        display: block;
+        z-index: 2;
+    }
+
+    .hamburgher.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgher.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburgher.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5em;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--dark);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 1em 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    nav ul li a {
+        color: var(--white);
+    }
+}
+
+/* ------------------------------------- */
+
+.index-section {
+    margin: 13em 5em 0 5em;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction {
+    color: var(--dark);
+}
+
+.introduction h1 {
+    font-size: 3em;
+}
+
+.introduction p {
+    padding-top: 1em;
+    font-size: 1em;
+}
+.take-me {
+    background: none;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 2em;
+    border: 3px solid var(--gold);
+}
+.take-me a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--dark);
+}
+.take-me:hover {
+    background-color: var(--gold);
+}
