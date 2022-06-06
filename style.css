@@ -233,17 +233,20 @@ nav ul li a {
 /* ---------------------------------- */
 .services-0 {
     height: 20rem;
-    padding:5em 3em 0 3em;
+    padding: 5em 3em 0 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .services-0 h1 {
     color: var(--dark);
+    text-align: center;
 }
+
 .services-1 {
-    padding: 0 5rem 0 5rem;
+    padding: 0 2rem 0 2rem;
     color: var(--dark);
     height: 30rem;
     display: flex;
@@ -251,7 +254,7 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .service-1,
@@ -261,7 +264,7 @@ nav ul li a {
     height: 20em;
     width: 20em;
     padding: 1em;
-    background-color: var(--gold);
+    background: var(--gold);
 }
 
 .service-1-img {
@@ -296,7 +299,7 @@ nav ul li a {
 .service-2-text,
 .service-3-text,
 .service-4-text {
-    background: var(--blue);
+    background: var(--dark);
     height: 3em;
     align-items: center;
     display: flex;
@@ -311,4 +314,79 @@ nav ul li a {
 .service-4-text a {
     color: var(--white);
     text-decoration: none;
+}
+
+/* ------------------------------------- */
+.contact-0 {
+    height: 20rem;
+    padding: 5em 3em 0 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-0 {
+    color: var(--dark);
+    text-align: center;
+}
+
+@media (max-width: 320px) {
+    .services-0 h1 {
+        font-size: 1.4em;
+    }
+
+    .contact-0 h1 {
+        font-size: 1.4em;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .services-1 {
+        padding: 0 2rem 0 2rem;
+        color: var(--dark);
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5rem;
+    }
+
+    .service-1,
+    .service-2,
+    .service-3,
+    .service-4 {
+        height: 12em;
+        width: 12em;
+        padding: 1em;
+        background: var(--gold);
+    }
+
+    .service-1-img,
+    .service-2-img,
+    .service-3-img,
+    .service-4-img {
+        background-size: cover;
+        height: 65%;
+        width: 100%;
+    }
+
+    .service-1-text,
+    .service-2-text,
+    .service-3-text,
+    .service-4-text {
+        height: 3em;
+        margin-top: 1em;
+        padding: 0;
+    }
+
+    .service-1-text a,
+    .service-2-text a,
+    .service-3-text a,
+    .service-4-text a {
+        font-size: .9em;
+    }
 }
