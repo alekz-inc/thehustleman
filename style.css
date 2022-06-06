@@ -6,12 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Plus Jakarta Sans';
-
+    font-family: 'Poppins';
 }
 
 :root {
@@ -344,14 +344,8 @@ nav ul li a {
 
 @media (max-width: 320px) {
     .services-1 {
-        padding: 0 2rem 0 2rem;
+        padding: 0 1rem 0 rem;
         color: var(--dark);
-        height: 30rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
         gap: 5rem;
     }
 
@@ -362,7 +356,7 @@ nav ul li a {
         height: 12em;
         width: 12em;
         padding: 1em;
-        background: var(--gold);
+        background: var(--blue);
     }
 
     .service-1-img,
@@ -389,4 +383,10 @@ nav ul li a {
     .service-4-text a {
         font-size: .9em;
     }
+}
+
+/* ----------------------------------- */
+.footer {
+    background: var(--darkblue);
+    height: 15em;
 }
