@@ -11,11 +11,13 @@
 :root {
     --dark: #121212;
     --white: #fff;
-    --gold: #ffb000;
+    --gold: #ffb81a;
     --blue: #447BBE;
     --darkblue: #2B3784;
     --red: #DF1F2D;
     --darkred: #B11313;
+    --goldd: #f5be01;
+    --darkk: #1e2328;
 }
 
 nav {
@@ -140,11 +142,12 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: var(--dark);
 }
 
 .introduction {
     padding: 20em 5em 0 5em;
-    color: var(--dark);
+    color: var(--white);
     height: 30em;
 }
 
@@ -168,9 +171,9 @@ nav ul li a {
 }
 
 .take-me a {
+    color: var(--white);
     font-size: 1.2em;
     text-decoration: none;
-    color: var(--dark);
     font-weight: 500;
 }
 
@@ -226,12 +229,13 @@ nav ul li a {
 
 /* ---------------------------------- */
 .services-0 {
-    height: 20rem;
+    height: 20em;
     padding: 5em 3em 0 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--white);
 }
 
 .services-0 h1 {
@@ -241,8 +245,8 @@ nav ul li a {
 
 .services-1 {
     padding: 0 2rem 0 2rem;
-    color: var(--dark);
-    height: 30rem;
+    background: var(--white);
+    height: 60rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -256,20 +260,19 @@ nav ul li a {
 .service-3,
 .service-4 {
     height: 20em;
-    width: clamp(10em, 20em, 30em);
-    padding: 1em;
-    background: var(--gold);
+    width: 20em;
+    background: var(--white);
 }
 
 .service-1-img {
-    background: url(img/pattern.jpg);
+    background: url(img/logo-design.jpg);
     background-size: cover;
     height: 70%;
     width: 100%;
 }
 
 .service-2-img {
-    background: url(img/pattern.jpg);
+    background: url(img/social-media-marketing.jpg);
     background-size: cover;
     height: 70%;
     width: 100%;
@@ -299,7 +302,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 2em;
+    margin: 0;
 }
 
 .service-1-text a,
@@ -311,10 +314,14 @@ nav ul li a {
 }
 
 @media (max-width: 320px) {
+    .services-0 h1 {
+        font-size: 1.2em;
+    }
     .services-1 {
         padding: 0 1rem 0 rem;
         color: var(--dark);
         gap: 5rem;
+        height: auto;
     }
 
     .service-1,
@@ -332,8 +339,7 @@ nav ul li a {
     .service-3-img,
     .service-4-img {
         background-size: cover;
-        height: 65%;
-        width: 100%;
+        height: 65%;        
     }
 
     .service-1-text,
@@ -351,6 +357,12 @@ nav ul li a {
     .service-4-text a {
         font-size: .9em;
     }
+}
+@media (max-width: 320px) {
+    .service-1-text {
+        font-size: .8em;
+    }
+    
 }
 
 /* ------------------------------------- */
@@ -393,7 +405,7 @@ nav ul li a {
 
 /* ----------------------------------- */
 .footer {
-    background: var(--darkblue);
+    background: var(--dark);
     height: auto;
     display: flex;
     flex-direction: column;
