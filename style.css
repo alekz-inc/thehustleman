@@ -9,7 +9,7 @@
 }
 
 :root {
-    --dark: #121212;
+    --dark: #000;
     --white: #fff;
     --gold: #ffb81a;
     --blue: #447BBE;
@@ -235,7 +235,7 @@ nav ul li a {
 }
 
 @media (max-width: 320px) {
-    .nav-logo a {
+    .nav-logo img {
         display: none;
     }
 
