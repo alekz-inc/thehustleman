@@ -87,6 +87,10 @@ nav ul li a {
     background-color: var(--white);
 }
 
+.nav-link.active {
+    color: var(--gold);
+}
+
 @media (max-width: 768px) {
     .navbar {
         position: fixed;
@@ -256,125 +260,6 @@ nav ul li a {
     align-items: center;
 }
 
-
-/* .services-1 {
-    padding: 0 2rem 0 2rem;
-    background: var(--white);
-    height: auto;
-    background: var(--blue);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.service-1,
-.service-2,
-.service-3,
-.service-4 {
-    height: 15em;
-    width: 20em;
-    background: var(--white);
-}
-
-.service-1-img {
-    background: url(img/logo-design.jpg);
-    background-size: cover;
-    height: 70%;
-    width: 100%;
-}
-
-.service-2-img {
-    background: url(img/social-media-marketing.jpg);
-    background-size: cover;
-    height: 70%;
-    width: 100%;
-}
-
-.service-3-img {
-    background: url(img/pattern.jpg);
-    background-size: cover;
-    height: 70%;
-    width: 100%;
-}
-
-.service-4-img {
-    background: url(img/pattern.jpg);
-    background-size: cover;
-    height: 70%;
-    width: 100%;
-}
-
-.service-1-text,
-.service-2-text,
-.service-3-text,
-.service-4-text {
-    background: var(--dark);
-    height: 3em;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.service-1-text a,
-.service-2-text a,
-.service-3-text a,
-.service-4-text a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-@media (max-width: 320px) {
-    .services-0 h1 {
-        font-size: 1.2em;
-    }
-
-    .services-1 {
-        padding: 0 1rem 0 rem;
-        color: var(--dark);
-        height: auto;
-    }
-
-    .service-1,
-    .service-2,
-    .service-3,
-    .service-4 {
-        height: 12em;
-        width: 12em;
-        padding: 1em;
-        background: var(--white);
-    }
-
-    .service-1-img,
-    .service-2-img,
-    .service-3-img,
-    .service-4-img {
-        background-size: cover;
-        height: 65%;
-    }
-
-    .service-1-text,
-    .service-2-text,
-    .service-3-text,
-    .service-4-text {
-        height: 3em;
-    }
-
-    .service-1-text a,
-    .service-2-text a,
-    .service-3-text a,
-    .service-4-text a {
-        font-size: .9em;
-    }
-
-    .service-1-text {
-        font-size: .8em;
-    }
-} */
-
 .services-0 {
     height: 15em;
     padding: 5em 3em 0 3em;
@@ -395,7 +280,7 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 3em;
     padding: 0 0 5em 0;
 }
 
