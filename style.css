@@ -227,9 +227,8 @@ nav ul li a {
     height: 50em;
 }
 
-/* ---------------------------------- */
 .services-0 {
-    height: 20em;
+    height: 10em;
     padding: 5em 3em 0 3em;
     display: flex;
     flex-direction: column;
@@ -243,23 +242,24 @@ nav ul li a {
     text-align: center;
 }
 
-.services-1 {
+/* .services-1 {
     padding: 0 2rem 0 2rem;
     background: var(--white);
-    height: 60rem;
+    height: auto;
+    background: var(--blue);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 5rem;
+
 }
 
 .service-1,
 .service-2,
 .service-3,
 .service-4 {
-    height: 20em;
+    height: 15em;
     width: 20em;
     background: var(--white);
 }
@@ -302,7 +302,6 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
 }
 
 .service-1-text a,
@@ -317,10 +316,10 @@ nav ul li a {
     .services-0 h1 {
         font-size: 1.2em;
     }
+
     .services-1 {
         padding: 0 1rem 0 rem;
         color: var(--dark);
-        gap: 5rem;
         height: auto;
     }
 
@@ -331,7 +330,7 @@ nav ul li a {
         height: 12em;
         width: 12em;
         padding: 1em;
-        background: var(--blue);
+        background: var(--white);
     }
 
     .service-1-img,
@@ -339,7 +338,7 @@ nav ul li a {
     .service-3-img,
     .service-4-img {
         background-size: cover;
-        height: 65%;        
+        height: 65%;
     }
 
     .service-1-text,
@@ -347,8 +346,6 @@ nav ul li a {
     .service-3-text,
     .service-4-text {
         height: 3em;
-        margin-top: 1em;
-        padding: 0;
     }
 
     .service-1-text a,
@@ -357,15 +354,76 @@ nav ul li a {
     .service-4-text a {
         font-size: .9em;
     }
-}
-@media (max-width: 320px) {
+
     .service-1-text {
         font-size: .8em;
     }
-    
+} */
+
+
+.services-1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
-/* ------------------------------------- */
+.service-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.service-1-img img {
+    background-size: cover;
+    height: 12em;
+    width: 100%;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4 {
+    height: auto;
+    width: 20em;
+    padding: 1em;
+    background: var(--white);
+}
+
+.service-1-btn,
+.service-2-btn,
+.service-3-btn,
+.service-4-btn,
+.service-5-btn,
+.service-6-btn {
+    height: 3em;
+    background: var(--dark);
+}
+
+.service-1-btn a,
+.service-2-btn a,
+.service-3-btn a,
+.service-4-btn a,
+.service-5-btn a,
+.service-6-btn a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 320px) {
+    .service-1-img img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* --------------------------------- */
+
 .contact-0 {
     height: 20rem;
     padding: 5em 3em 0 3em;
@@ -379,18 +437,6 @@ nav ul li a {
     color: var(--dark);
     text-align: center;
 }
-
-/* .contact-1 {
-    display: flex;
-}
-
-.contact-left {
-    background: var(--darkblue);
-}
-
-.contact-right {
-    background: var(--blue);
-} */
 
 @media (max-width: 320px) {
     .services-0 h1 {
@@ -430,9 +476,11 @@ nav ul li a {
     width: 3em;
     border-radius: 50%;
 }
+
 .contact-footer-circle:hover {
     background: #ffc84d;
 }
+
 .footer-up img {
     height: 1.5em;
 }
