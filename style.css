@@ -121,9 +121,10 @@ nav ul li a {
         height: 18em;
         transition: 0.3s;
     }
+
     .nav-item {
         margin: 1em 0;
-        
+
     }
 
     .nav-link.active {
@@ -142,19 +143,15 @@ nav ul li a {
 /* ------------------------------------- */
 
 .introduction {
-    height: 50em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background: url(img/ps-3.png);
     background-size: cover;
-}
-
-.introduction {
     padding: 15em 5em 0 5em;
     color: var(--white);
-    height: 40em;
+    height: 50em;
 }
 
 .introduction h1 {
@@ -520,15 +517,4 @@ nav ul li a {
     font-weight: 200;
     font-size: .9em;
     letter-spacing: .5px;
-}
-
-@media (max-width: 768px) {
-    .footer-down {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-down h1 {}
 }
