@@ -26,7 +26,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
+    
     top: 0;
     width: 100%;
     font-weight: 400;
@@ -149,19 +149,21 @@ nav ul li a {
 
 .introduction {
     padding: 20em 5em 0 5em;
-    color: var(--dark);
+    color: var(--white);
     height: 30em;
 }
 
 .introduction h1 {
     font-size: 3em;
     font-weight: 800;
+    color: var(--white);
 }
 
 .introduction p {
     padding-top: 1em;
     font-size: 1em;
     font-weight: 500;
+    color: var(--white);
 }
 
 .take-me {
@@ -173,7 +175,7 @@ nav ul li a {
 }
 
 .take-me a {
-    color: var(--dark);
+    color: var(--white);
     font-size: 1.2em;
     text-decoration: none;
     font-weight: 500;
