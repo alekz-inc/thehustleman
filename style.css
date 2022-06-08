@@ -26,7 +26,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    position: fixed;
+    z-index: 3;
     top: 0;
     width: 100%;
     font-weight: 400;
@@ -195,6 +196,7 @@ nav ul li a {
 }
 
 .blink-down {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,7 +221,7 @@ nav ul li a {
     }
 
     .take-me a {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .take-me:hover {
@@ -393,8 +395,8 @@ nav ul li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2em;
     padding: 0 0 5em 0;
-
 }
 
 .services-2 {
