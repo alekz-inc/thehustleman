@@ -223,7 +223,13 @@ nav ul li a {
     }
 
     .introduction {
-        padding: 20em 0 0 0;
+        padding: 16em 1em 1em 1em;
+    }
+    .introduction h1 {
+        font-size: 1.5em;
+    }
+    .introduction p {
+        font-size: .9em;
     }
 }
 
