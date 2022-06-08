@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Plus Jakarta Sans';   
+    font-family: 'Plus Jakarta Sans';
 }
 
 :root {
@@ -115,10 +115,11 @@ nav ul li a {
         left: -100%;
         top: 5em;
         gap: 0;
+        display: flex;
         flex-direction: column;
         background-color: var(--dark);
         width: 100%;
-        text-align: center;
+        height: 60%;
         transition: 0.3s;
     }
 
@@ -150,7 +151,7 @@ nav ul li a {
 .introduction {
     padding: 15em 5em 0 5em;
     color: var(--white);
-    height: 30em;
+    height: 40em;
 }
 
 .introduction h1 {
@@ -171,18 +172,20 @@ nav ul li a {
     padding: 1em;
     cursor: pointer;
     margin-top: 2em;
-    border: 3px solid var(--gold);
+    background: var(--white);
+    /*border: 3px solid var(--gold); */
+    border: 0;
 }
 
 .take-me a {
-    color: var(--white);
+    color: var(--dark);
     font-size: 1.2em;
     text-decoration: none;
     font-weight: 500;
 }
 
 .take-me:hover {
-    background-color: var(--gold);
+    background: #eee;
 }
 
 #blink-down {
@@ -243,10 +246,15 @@ nav ul li a {
     }
 }
 
-.overview {
+.stats {
     background: var(--dark);
     height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.stats 
 
 
 /* .services-1 {
@@ -388,7 +396,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     padding: 0 0 5em 0;
-    
+
 }
 
 .services-2 {
@@ -511,4 +519,15 @@ nav ul li a {
     font-weight: 200;
     font-size: .9em;
     letter-spacing: .5px;
+}
+
+@media (max-width: 768px) {
+    .footer-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-down h1 {}
 }
