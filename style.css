@@ -221,7 +221,7 @@ nav ul li a {
     .introduction {
         padding: 15em 5em 0 5em;
         color: var(--dark);
-        height: 25em;
+        height: 35em;
     }
 
     .take-me a {
@@ -252,13 +252,34 @@ nav ul li a {
     }
 }
 
-.stats {
+.action {
+    height: 30em;
+    background: var(--white);
+}
+
+/* .stats {
     background: var(--dark);
-    height: 50em;
+    height: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4em;
 }
+
+.stats-1, .stats-2, .stats-3 {
+    background: var(--white);
+    height: 25em;
+    width: 20em;
+}
+@media (max-width: 768px) {
+    .stats {
+        height: 50em;
+    }
+    .stats-1, .stats-2, .stats-3 {
+        height: 10em;
+        
+    }
+} */
 
 .services-0 {
     height: 15em;
@@ -297,9 +318,9 @@ nav ul li a {
 
 .service-1-img img {
     background-size: cover;
-    height: 12em;
+    height: auto;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4 / 3;
 }
 
 .service-1,
