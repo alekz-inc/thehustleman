@@ -11,6 +11,7 @@
 :root {
     --dark: #000;
     --white: #fff;
+    --grey: #f3f5f4;
     --gold: #ffb81a;
     --blue: #447BBE;
     --darkblue: #2B3784;
@@ -18,6 +19,7 @@
     --darkred: #B11313;
     --goldd: #f5be01;
     --darkk: #1e2328;
+    --roz: #FF7396;
 }
 
 nav {
@@ -152,7 +154,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url(img/ps-3.png);
+    /* background: url(img/ps-3.png); */
     background-size: cover;
     padding: 15em 5em 0 5em;
     color: var(--white);
@@ -162,14 +164,14 @@ nav ul li a {
 .introduction h1 {
     font-size: 3em;
     font-weight: 800;
-    color: var(--white);
+    color: var(--dark);
 }
 
 .introduction p {
     padding-top: 1em;
     font-size: 1em;
     font-weight: 500;
-    color: var(--white);
+    color: var(--dark);
 }
 
 .take-me {
@@ -366,13 +368,14 @@ nav ul li a {
 
 /* --------------------------------- */
 
-.contact-0 {
+/* .contact-0 {
     height: 20rem;
     padding: 5em 3em 0 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: var(--grey);
 }
 
 .contact-0 {
@@ -388,8 +391,104 @@ nav ul li a {
     .contact-0 h1 {
         font-size: 1.4em;
     }
+} */
+
+.contact-1 {
+    padding: 5em 3em;
+    display: flex;
+    background-color: var(--darkk);
+    gap: 3em;
+    justify-content: center;
+    height: 30em;
 }
 
+.bronze {
+    height: 17.5em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    background: #fefefe;
+}
+
+.bronze p,
+.bronze h1 {
+    color: var(--dark);
+}
+
+.silver {
+    height: 19.5em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    background: var(--white);
+    /* box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25) */
+}
+
+.silver p,
+.silver h1 {
+    color: var(--dark);
+}
+
+.gold {
+    height: 21.5em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    background: #fefefe;
+}
+
+.gold p,
+.gold h1 {
+    color: var(--dark);
+}
+
+.bsg-title {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.bsg-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000;
+    padding-top: .9em;
+}
+.bsg-enroll {
+    padding: .5em;
+    background: #ffbf00;
+    border: 1px solid #ffbf00;
+    border-radius: 50px;
+}
+
+.bsg-enroll a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.2em;
+    padding: .7em;
+}
+
+.solid {
+    border: 0;
+    border-top: 1px solid #000;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
 
 /* ----------------------------------- */
 .footer {
