@@ -396,7 +396,7 @@ nav ul li a {
 .contact-1 {
     padding: 5em 3em;
     display: flex;
-    background-color: var(--darkk);
+    background-color: #121212;
     gap: 3em;
     justify-content: center;
     height: auto;
@@ -459,13 +459,13 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #000;
+    /* border-top: 1px solid #000; */
     padding-top: .9em;
 }
 .bsg-enroll {
     padding: .5em;
     background: #ffbf00;
-    border: 1px solid #ffbf00;
+    border: 0;
     border-radius: 50px;
 }
 
@@ -492,7 +492,7 @@ nav ul li a {
         font-size: .9em;
     }
     .bsg-enroll a {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
 
