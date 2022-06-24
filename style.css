@@ -9,6 +9,10 @@
 }
 
 :root {
+
+    --back: #1a1c1e;
+    --front: #2f3338;
+
     --dark: #000;
     --white: #fff;
     --grey: #f3f5f4;
@@ -368,7 +372,7 @@ nav ul li a {
 
 /* --------------------------------- */
 
-/* .contact-0 {
+.contact-0 {
     height: 20rem;
     padding: 5em 3em 0 3em;
     display: flex;
@@ -391,12 +395,12 @@ nav ul li a {
     .contact-0 h1 {
         font-size: 1.4em;
     }
-} */
+}
 
 .contact-1 {
     padding: 5em 3em;
     display: flex;
-    background-color: #121212;
+    background-color: var(--white);
     gap: 3em;
     justify-content: center;
     height: auto;
@@ -409,7 +413,7 @@ nav ul li a {
     flex-direction: column;
     padding: 1em;
     gap: 1em;
-    background: #fefefe;
+    background: #ccc;
 }
 
 .bronze p,
@@ -530,4 +534,18 @@ nav ul li a {
     font-weight: 200;
     font-size: .9em;
     letter-spacing: .5px;
+}
+/* ---- */
+
+.design {
+    display: flex;
+    gap: 2em;
+    height: 20em;
+}
+.sidebar {
+    padding-top: 5em;
+    background: var(--back);
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
