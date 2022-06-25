@@ -12,6 +12,86 @@
 
 <body>
 
+    <div class="navbar">
+        <div class="nav-logo">
+            <img src="icons/logo.png">
+            <a href="index.html">Hustle Academy</a>
+        </div>
+        <div class="nav-menu">
+            <div class="nav-link">
+                <img src="icons/home.svg">
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-link">
+                <img src="icons/heart.svg">
+                <a href="#">Socials</a>
+            </div>
+            <div class="nav-link" href="services.html">
+                <img src="icons/services.svg">
+                <a>Services</a>
+            </div>
+            <div class="nav-link">
+                <img src="icons/mail.svg">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="hamburgher">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+    <div class="navbar-error"></div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="icons/logo.png">
+                <a href="index.html">Hustle Academy</a>
+            </div>
+            <hr class="solid">
+            <div class="sidebar-links">
+                <div class="link">
+                    <img src="icons/home.svg">
+                    <a href="#">Home</a>
+                </div>
+                <div class="link">
+                    <img src="icons/heart.svg">
+                    <a href="#">Socials</a>
+                </div>
+                <div class="link">
+                    <img src="icons/services.svg">
+                    <a href="#">Services</a>
+                </div>
+                <div class="link">
+                    <img src="icons/mail.svg">
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <hr class="solid">
+        </div>
+        <!--sidebar end -->
+        <div class="content">
+            <a href="#">Home</a>
+        </div>
+    </div>
+
+
+    <script>
+        const hamburgher = document.querySelector(".hamburgher");
+        const navmenu = document.querySelector(".nav-menu");
+
+        hamburgher.addEventListener("click", () => {
+            hamburgher.classList.toggle("active");
+            navmenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n >= n.addEventListener("click", () => {
+            hamburgher.classList.remove("active");
+            navmenu.classList.remove("active");
+        }))
+    </script>
+
 </body>
 
 </html>
