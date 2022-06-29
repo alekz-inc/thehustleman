@@ -9,25 +9,23 @@
 
 :root {
 
+    --dark: #181818;
     --back: #1a1c1e;
-    --front: #2f3338;
-    --dark: #000;
+    --light: #2f3338;
+    --lighter: #3f444c;
+    --lightest: #5e616a;
     --white: #fff;
-    --grey: #f3f5f4;
     --gold: #ffb81a;
     --blue: #447BBE;
-    --darkblue: #2B3784;
+    --gold: #ffb81a;
     --red: #DF1F2D;
-    --darkred: #B11313;
-    --goldd: #f5be01;
-    --darkk: #1e2328;
     --roz: #FF7396;
 
     --navbar-height: 5em;
 }
 
 nav {
-    background: var(--dark);
+    background: var(--back);
     height: var(--navbar-height);
     display: flex;
     align-items: center;
@@ -55,27 +53,39 @@ nav {
     text-decoration: none;
 }
 
-nav ul {
+.nav-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1em;
 }
 
-nav ul li {
-    list-style: none;
+.nav-menu img {
+    height: 1.7em;
+    width: auto;
 }
 
-nav ul li a {
+.nav-menu a {
     text-decoration: none;
     color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: .5em;
+    gap: 1em;
+    border-radius: 12px;
 }
 
-.nav-item a {
-    transition: .3s ease;
+.nav-link a {
+    transition: .5s ease-in-out;
 }
 
-.nav-item a:hover {
-    color: var(--gold);
+.nav-link {
+    border-radius: 12px;
+    padding: .5em;
+    width: auto;
+}
+.nav-link:hover {
+    background-color: var(--lightest);
 }
 
 .hamburgher {
@@ -91,10 +101,6 @@ nav ul li a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--white);
-}
-
-.nav-link.active {
-    color: var(--gold);
 }
 
 @media (max-width: 768px) {
@@ -127,36 +133,23 @@ nav ul li a {
         top: 5em;
         display: flex;
         flex-flow: column;
-        background-color: var(--dark);
+        background-color: var(--back);
         width: 100%;
-        height: 18em;
+        height: 100%;
         transition: 0.3s;
     }
-
-    .nav-item {
-        margin: 1em 0;
-
-    }
-
-    .nav-link active {
-        color: var(--gold);
-    }
-
     .nav-menu.active {
         left: 0;
     }
 
-    nav ul li a {
-        color: var(--white);
+    .nav-link {
+        background-color: var(--lighter);
+        padding: 1em;
+        width: 10em;
     }
+
 }
 
-@media (max-width: 425px) {
-    html {
-        font-size: 80%;
-    }
-}
-/* ------------------------------------- */
 .introduction {
     margin: var(--navbar-height) 0 0 0;
     height: 100vh;
@@ -172,16 +165,17 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: .7em;
 }
 
 .intro-text h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 700;
 }
 
 .intro-text p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -220,16 +214,6 @@ nav ul li a {
 .contact-0 {
     color: var(--dark);
     text-align: center;
-}
-
-@media (max-width: 320px) {
-    .services-0 h1 {
-        font-size: 1.4em;
-    }
-
-    .contact-0 h1 {
-        font-size: 1.4em;
-    }
 }
 
 .contact-1 {
