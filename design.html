@@ -11,7 +11,69 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="icons/logo.png">
+            <a href="#">Hustle Academy</a>
+        </div>
+        <ul class="nav-menu" id="linkuri">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#index.html">Portofolio</a></li> -->
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <!-- <img class="hamburgher" src="icons/menu.png" onclick="togglemenu()"> -->
+        <div class="hamburgher">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
+    <div class="design">
+        <div class="sidebar">
+            <div class="side-nav">
+                <a href="#"><img src="icons/mail.svg">Home</a>
+                <a href="#"><img src="icons/mail.svg">Home</a>
+                <a href="#"><img src="icons/mail.svg">Home</a>
+            </div>
+        </div>
+        <div class="middle"></div>
+        <div class="right-3"></div>
+    </div>
+
+    <div class="contact" style="height: 30em;"></div>
+
+    <footer class="footer">
+        <div class="footer-up">
+            <!-- <div class="footer-up-1"></div>
+            <div class="footer-up-2"></div> -->
+        </div>
+        <div class="footer-down">
+            <h4>@the.hustle.man ❤️ Official Website</h4>
+            <p>All rights reserved © 2022</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburgher = document.querySelector(".hamburgher");
+        const navmenu = document.querySelector(".nav-menu");
+
+        hamburgher.addEventListener("click", () => {
+            hamburgher.classList.toggle("active");
+            navmenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n >= n.addEventListener("click", () => {
+            hamburgher.classList.remove("active");
+            navmenu.classList.remove("active");
+        }))
+    </script>
+=======
+
+>>>>>>> fe1686ae27c363d9376635c56d25ff110e728471
 </body>
 
 </html>
