@@ -15,14 +15,9 @@ body {
 :root {
 
     --back: #1a1c1e;
-<<<<<<< HEAD
     --front: #2f3338;
 
     --dark: #000;
-=======
-    --lightdark: #2f3338;
-    --black: #000;
->>>>>>> fe1686ae27c363d9376635c56d25ff110e728471
     --white: #fff;
     --gold: #ffb81a;
     --blue: #447BBE;
@@ -212,7 +207,6 @@ body {
     .nav-menu.active {
         left: 0;
     }
-<<<<<<< HEAD
 
     nav ul li a {
         color: var(--white);
@@ -491,6 +485,4 @@ body {
     font-weight: 200;
     font-size: .9em;
     letter-spacing: .5px;
-=======
->>>>>>> fe1686ae27c363d9376635c56d25ff110e728471
 }
