@@ -90,6 +90,33 @@
         </div>
     </div>
 
+    <div class="services-2"></div>
+    
+    <footer class="footer">
+        <div class="footer-up">
+            <!-- <div class="footer-up-1"></div>
+            <div class="footer-up-2"></div> -->
+        </div>
+        <div class="footer-down">
+            <h4>@the.hustle.man ❤️ Official Website</h4>
+            <p>All rights reserved © 2022</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburgher = document.querySelector(".hamburgher");
+        const navmenu = document.querySelector(".nav-menu");
+
+        hamburgher.addEventListener("click", () => {
+            hamburgher.classList.toggle("active");
+            navmenu.classList.toggle("active");
+        })
+        document.querySelectorAll(".nav-link").forEach(n >= n.addEventListener("click", () => {
+            hamburgher.classList.remove("active");
+            navmenu.classList.remove("active");
+        }))
+    </script>
 </body>
 
 </html>
