@@ -84,6 +84,7 @@ nav {
     padding: .5em;
     width: auto;
 }
+
 .nav-link:hover {
     background-color: var(--lightest);
 }
@@ -138,6 +139,7 @@ nav {
         height: 100%;
         transition: 0.3s;
     }
+
     .nav-menu.active {
         left: 0;
     }
@@ -150,16 +152,89 @@ nav {
 
 }
 
-.introduction {
-    margin: var(--navbar-height) 0 0 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        font-size: 75%;
+        align-items: center;
+    }
+
+    .intro-left {
+        padding-top: 10em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.intro-text {
+.intro {
+    height: 100vh;
+    margin: var(--navbar-height) 0 0 0;
+    display: flex;
+    padding: 2em;
+    gap: 2em;
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 70%;
+}
+
+.intro-left h1 {
+    font-size: 2.3em;
+}
+
+.intro-left p {
+    font-size: 1.2em;
+}
+
+.intro-left .intro-btns {
+    display: flex;
+    gap: 1em;
+}
+
+.intro-btn-1 {
+    background: var(--lighter);
+    border: 0;
+    padding: 1em 1.2em;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.intro-btn-2 {
+    background: 0;
+    border: 2px solid var(--lighter);
+    padding: 1em 1.2em;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.intro-btn-1:hover {
+    background: var(--lightest);
+}
+
+.intro-btn-2:hover {
+    background: #f3f3f3;
+}
+
+.intro-right {
+    width: 50%;
+    display: flex;
+    
+}
+
+.intro-right img {
+    min-height: none;
+    max-height: 25em;
+}
+
+/* .intro-text {
     padding-top: 20em;
     display: flex;
     flex-direction: column;
@@ -177,7 +252,7 @@ nav {
 .intro-text p {
     font-size: 1em;
     font-weight: 400;
-}
+} */
 
 #blink-down {
     height: 3em;
@@ -234,9 +309,11 @@ nav {
     overflow-x: auto;
     /* border: 2px solid #ddd; */
 }
+
 .wrapper::-webkit-scrollbar {
     width: 0;
 }
+
 .wrapper .item {
     min-width: 15em;
     width: auto;
@@ -250,6 +327,7 @@ nav {
     border-radius: 20px;
     box-shadow: 0 0 6px -2px rgba(0, 0, 0, .4);
 }
+
 .item-up {
     display: flex;
     justify-content: space-between;
@@ -266,6 +344,7 @@ nav {
 .item-check p {
     padding: .3em;
 }
+
 .item-btn {
     background: #DF1F2D;
     border: 0;
