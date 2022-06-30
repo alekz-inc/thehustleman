@@ -229,6 +229,8 @@ nav {
     gap: 2em;
     margin: 2em;
     padding: 3em;
+    justify-content: space-between;
+    align-items: center;
     overflow-x: auto;
     /* border: 2px solid #ddd; */
 }
