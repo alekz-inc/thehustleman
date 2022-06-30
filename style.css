@@ -199,8 +199,6 @@ nav {
     }
 }
 
-/* --------------------------------- */
-
 .contact-0 {
     height: 20rem;
     padding: 5em 3em 0 3em;
@@ -217,7 +215,7 @@ nav {
 }
 
 .contact-1 {
-    padding: 5em 3em;
+    
     display: flex;
     background-color: var(--white);
     gap: 3em;
@@ -225,103 +223,51 @@ nav {
     height: auto;
 }
 
-.bronze {
+.wrapper {
+    height: 20em;
+    display: flex;
+    gap: 2em;
+    margin: 2em;
+    padding: 3em;
+    overflow-x: auto;
+    /* border: 2px solid #ddd; */
+}
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+.wrapper .item {
+    min-width: 15em;
+    width: auto;
     height: 18em;
-    width: 15em;
+    padding: 1.2em;
+    background-color: #fff;
+    margin-right: 2px;
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-.bronze p,
-.bronze h1 {
-    color: var(--dark);
-}
-
-.silver {
-    height: 18em;
-    width: 15em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background: var(--white);
-    /* box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25) */
-}
-
-.silver p,
-.silver h1 {
-    color: var(--dark);
-}
-
-.gold {
-    height: 18em;
-    width: 15em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background: #fefefe;
-}
-
-.gold p,
-.gold h1 {
-    color: var(--dark);
-}
-
-.bsg-title {
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    gap: .6em;
-}
-
-.bsg-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-top: 1px solid #000; */
-    padding-top: .9em;
-}
-
-.bsg-enroll {
-    padding: .5em;
-    background: #ffbf00;
-    border: 0;
-    border-radius: 50px;
-}
-
-.bsg-enroll a {
-    text-decoration: none;
-    color: var(--dark);
-    font-size: 1.2em;
-    padding: .7em;
-}
-
-.silver,
-.bronze,
-.gold {
+    border-radius: 20px;
     box-shadow: 0 0 6px -2px rgba(0, 0, 0, .4);
-    border-radius: 12px;
-    padding: 1.5em;
+}
+.item-up {
+    display: flex;
+    justify-content: space-between;
 }
 
-.solid {
+.item-up button {
+    background: #DF1F2D;
     border: 0;
-    border-top: 1px solid #000;
-    width: 100%;
+    padding: .2em .6em;
+    border-radius: 20px;
+    color: #fff;
 }
 
-@media (max-width: 768px) {
-    .contact-1 {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .bsg-offer p {
-        font-size: .9em;
-    }
-
-    .bsg-enroll a {
-        font-size: 1.3em;
-    }
+.item-check p {
+    padding: .3em;
+}
+.item-btn {
+    background: #DF1F2D;
+    border: 0;
+    border-radius: 20px;
+    padding: .4em .5em;
+    color: #fff;
 }
