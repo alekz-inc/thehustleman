@@ -144,6 +144,7 @@ nav {
 }
 
 .intro-btn-1 {
+    width: 9em;
     background: var(--lighter);
     border: 0;
     margin-top: 1em;
@@ -156,6 +157,7 @@ nav {
 }
 
 .intro-btn-2 {
+    width: 9em;
     background: 0;
     margin-top: 1em;
     border: 2px solid var(--lighter);
@@ -235,6 +237,8 @@ nav {
 
     .intro-btn-1,
     .intro-btn-2 {
+        width: 8em;
+        padding: .6em .6em;
         font-size: .7em;
     }
     .intro-right img {
