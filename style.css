@@ -57,11 +57,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: .8em;
 }
 
 .nav-menu img {
-    height: 1.7em;
+    height: 1.5em;
     width: auto;
 }
 
@@ -71,7 +71,7 @@ nav {
     display: flex;
     align-items: center;
     padding-left: .5em;
-    gap: 1em;
+    gap: .7em;
     border-radius: 12px;
 }
 
@@ -154,36 +154,57 @@ nav {
 
 @media (max-width: 768px) {
     .intro {
+        display: flex;
         flex-direction: column;
-        font-size: 75%;
         align-items: center;
+        font-size: 85%;
+        gap: 3em;
+    }
+
+    .intro-right img {
+        height: 20em;
+        width: auto;
     }
 
     .intro-left {
-        padding-top: 10em;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
+
+    .intro-btn-1,
+    .intro-btn-2 {
+        font-size: .5em;
+    }
+
 }
 
 .intro {
-    height: 100vh;
-    margin: var(--navbar-height) 0 0 0;
+    margin-top: calc(var(--navbar-height) + 2em);
     display: flex;
-    padding: 2em;
-    gap: 2em;
+    justify-content: center;
 }
 
 .intro-left {
     display: flex;
+    width: 40%;
     flex-direction: column;
     gap: 1em;
-    width: 70%;
+    justify-content: center;
+}
+
+.intro-right {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-right img {
+    width: 25em;
+    height: auto;
 }
 
 .intro-left h1 {
-    font-size: 2.3em;
+    font-size: 3em;
 }
 
 .intro-left p {
@@ -198,7 +219,8 @@ nav {
 .intro-btn-1 {
     background: var(--lighter);
     border: 0;
-    padding: 1em 1.2em;
+    margin-top: 1em;
+    padding: .6em .8em;
     color: #fff;
     border-radius: 30px;
     font-size: 1em;
@@ -208,8 +230,9 @@ nav {
 
 .intro-btn-2 {
     background: 0;
+    margin-top: 1em;
     border: 2px solid var(--lighter);
-    padding: 1em 1.2em;
+    padding: .6em .8em;
     border-radius: 30px;
     font-size: 1em;
     cursor: pointer;
@@ -222,37 +245,6 @@ nav {
 .intro-btn-2:hover {
     background: #f3f3f3;
 }
-
-.intro-right {
-    width: 50%;
-    display: flex;
-    
-}
-
-.intro-right img {
-    min-height: none;
-    max-height: 25em;
-}
-
-/* .intro-text {
-    padding-top: 20em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: .7em;
-}
-
-.intro-text h1 {
-    font-size: 2em;
-    font-weight: 700;
-}
-
-.intro-text p {
-    font-size: 1em;
-    font-weight: 400;
-} */
 
 #blink-down {
     height: 3em;
@@ -316,7 +308,7 @@ nav {
 }
 
 .wrapper .item {
-    min-width: 15em;
+    min-width: 17em;
     width: auto;
     height: 18em;
     padding: 1.2em;
