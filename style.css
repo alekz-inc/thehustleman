@@ -107,14 +107,14 @@ nav {
 
 
 .intro {
-    margin-top: calc(var(--navbar-height) + 2em);
+    margin-top: calc(var(--navbar-height) + 4em);
     display: flex;
     justify-content: center;
+    padding: 3em;
 }
 
 .intro-left {
     display: flex;
-    width: 40%;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
@@ -227,6 +227,7 @@ nav {
         align-items: center;
         font-size: 85%;
         gap: 3em;
+        padding: 2em;
     }
 
     .intro-left {
