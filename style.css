@@ -305,7 +305,7 @@ nav {
 }
 
 .wrapper {
-    height: 15em;
+    height: 20em;
     display: flex;
     gap: 2em;
     margin: 2em;
@@ -322,8 +322,8 @@ nav {
 }
 
 .item {
-    min-width: 12em;
-    height: 16em;
+    min-width: 15em;
+    height: 20em;
     padding: 1.2em;
     background-color: #fff;
     margin-right: 2px;
@@ -337,27 +337,30 @@ nav {
 .item-up {
     display: flex;
     justify-content: space-between;
+    font-size: 1.3em;
+    align-items: center;
 }
 
 .item-up button {
     background: #DF1F2D;
     border: 0;
-    padding: 0 .9em;
+    padding: .6em .8em;
     border-radius: 20px;
     color: #fff;
 }
 
 
 .item-check p {
-    font-size: .9em;
-    padding: .3em;
+    font-size: 1.1em;
+    padding: .4em;
 }
 
 .item-btn {
     background: #DF1F2D;
     border: 0;
     border-radius: 20px;
-    padding: .4em .5em;
+    margin-top: .8em;
+    padding: .6em .8em;
     color: #fff;
 }
 
@@ -371,4 +374,63 @@ nav {
 .swiper img {
     height: 1.7em;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        height: 15em;
+        display: flex;
+        gap: 2em;
+        margin: 2em;
+        padding: 3em;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* border: 2px solid #ddd; */
+    }
+    
+    .wrapper::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    .item {
+        min-width: 12em;
+        height: 16em;
+        padding: 1.2em;
+        background-color: #fff;
+        margin-right: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        border-radius: 20px;
+        box-shadow: 0 0 6px -2px rgba(0, 0, 0, .4);
+    }
+    
+    .item-up {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .item-up button {
+        background: #DF1F2D;
+        border: 0;
+        padding: 0 .9em;
+        border-radius: 20px;
+        color: #fff;
+    }
+    
+    
+    .item-check p {
+        font-size: .9em;
+        padding: .3em;
+    }
+    
+    .item-btn {
+        background: #DF1F2D;
+        border: 0;
+        border-radius: 20px;
+        padding: .4em .5em;
+        color: #fff;
+    }
 }
