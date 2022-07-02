@@ -261,8 +261,8 @@ nav {
 }
 
 #blink-down {
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
     animation: blinker 1.5s linear infinite;
 }
 
