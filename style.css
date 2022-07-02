@@ -208,7 +208,7 @@ nav {
         display: flex;
         flex-flow: column;
         background-color: var(--back);
-        width: 100%;
+        width: 80%;
         height: 100%;
         transition: 0.3s;
     }
@@ -378,7 +378,7 @@ nav {
 
 @media (max-width: 768px) {
     .wrapper {
-        height: 15em;
+        height: 18em;
         display: flex;
         gap: 2em;
         margin: 2em;
@@ -387,7 +387,7 @@ nav {
         align-items: center;
         overflow-x: auto;
         overflow-y: hidden;
-        /* border: 2px solid #ddd; */
+        border: 2px solid #ddd;
     }
     
     .wrapper::-webkit-scrollbar {
