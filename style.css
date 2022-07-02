@@ -430,6 +430,7 @@ nav {
         background: #DF1F2D;
         border: 0;
         border-radius: 20px;
+        margin-top: 0;
         padding: .4em .5em;
         color: #fff;
     }
