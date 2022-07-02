@@ -24,6 +24,17 @@
     --navbar-height: 5em;
 }
 
+.meniu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.meniu {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 nav {
     background: var(--back);
     height: var(--navbar-height);
@@ -54,22 +65,8 @@ nav {
 }
 
 
-.nav-link a {
-    transition: .5s ease-in-out;
-}
-
 .nav-menu {
     display: none;
-}
-
-.nav-link {
-    border-radius: 12px;
-    padding: .5em;
-    width: auto;
-}
-
-.nav-link:hover {
-    background-color: var(--lightest);
 }
 
 .hamburgher {
@@ -161,6 +158,12 @@ nav {
     background: #f3f3f3;
 }
 
+.solid {
+    border: 0;
+    border-top: .2px solid #656970;
+    width: 70%;
+}
+
 @media (max-width: 768px) {
     .navbar {
         position: fixed;
@@ -197,12 +200,24 @@ nav {
         flex-direction: column;
         background-color: var(--back);
         width: 70%;
-        height: 90%;
+        height: 100%;
         transition: 0.3s;
+        gap: 2em;
+        padding: 2em;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-menu h2 {
+        color: #fff;
+        font-size: 1.1em;
     }
 
     .intro {
